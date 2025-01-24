@@ -9,7 +9,7 @@ export default function Accueil1 ({ language, setLanguage }) {
       };
 
 	return (
-        <Center bg="black" w={"100%"} h={"100vh"}>
+        <Center bg="black" w={"100%"} h={"100vh"} p={20}>
             <Flex direction="column" w="100%" h="100%" justifyContent={"flex-end"}>
                 <Box h={"5%"} w="100%"/>
                 <Image src='../../../public/iXcampusDecouvrez.jpg' objectFit='contain' h="90%"/>

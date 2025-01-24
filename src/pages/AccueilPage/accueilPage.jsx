@@ -6,18 +6,18 @@ import { Button, Center, Flex, Box, Text } from "@chakra-ui/react";
 import Accueil1 from "./accueil1";
 import Accueil2 from "./accueil2";
 import Header from "../../components/Header";
+import Accueil3 from "./accueil3";
 
 export default function Home() {
     const [language, setLanguage] = useState("FR");
     const [isWhiteHeader, setIsWhiteHeader] = useState(false)
     const [scrollY, setScrollY] = useState(0);
-    const whiteHeaderY = [[0, window.innerHeight]]
+    const whiteHeaderY = [[0, window.innerHeight], [window.innerHeight*2, window.innerHeight*3]]
 
-    // Function to track and print the scroll position in the console
     const handleScroll = () => {
-        const scrollPosition = window.scrollY; // Get the current scroll position
-        console.log("Scroll Y:", scrollPosition); // Print it to the console
-        setScrollY(scrollPosition); // Update the state
+        const scrollPosition = window.scrollY;
+        console.log("Scroll Y:", scrollPosition);
+        setScrollY(scrollPosition);
         for (let position in whiteHeaderY) {
             if (whiteHeaderY[position][0] <= scrollPosition && scrollPosition < whiteHeaderY[position][1]) {
                 setIsWhiteHeader(true)
@@ -44,6 +44,7 @@ export default function Home() {
             <Flex direction={"column"} w={"100%"} overflowX={"hidden"}>
                 <Accueil1 language={language} setLanguage={setLanguage}/>
                 <Accueil2 language={language}/>
+                <Accueil3 language={language}/>
             </Flex>
         </>
     )
