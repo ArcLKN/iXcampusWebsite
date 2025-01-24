@@ -2,7 +2,7 @@ import React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ChakraProvider} from "@chakra-ui/react";
-import Home from "./pages/accueilPage.jsx";
+import Home from "./pages/AccueilPage/accueilPage.jsx";
 
 const router = createBrowserRouter([
   {
