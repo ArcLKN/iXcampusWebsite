@@ -10,9 +10,9 @@ import Accueil3 from "./accueil3";
 
 export default function Home() {
     const [language, setLanguage] = useState("FR");
-    const [isWhiteHeader, setIsWhiteHeader] = useState(false)
+    const [isWhiteHeader, setIsWhiteHeader] = useState(true)
     const [scrollY, setScrollY] = useState(0);
-    const whiteHeaderY = [[0, window.innerHeight], [window.innerHeight*2, window.innerHeight*3]]
+    const whiteHeaderY = [[0, window.innerHeight], [window.innerHeight*2-50, window.innerHeight*3-50]]
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
@@ -21,9 +21,10 @@ export default function Home() {
         for (let position in whiteHeaderY) {
             if (whiteHeaderY[position][0] <= scrollPosition && scrollPosition < whiteHeaderY[position][1]) {
                 setIsWhiteHeader(true)
+                break
             }
             else setIsWhiteHeader(false)
-        
+            //console.log(whiteHeaderY[position][0] <= scrollPosition, scrollPosition < whiteHeaderY[position][1])
         }
     };
 
