@@ -9,6 +9,7 @@ import Header from "../../components/Header";
 import Accueil3 from "./accueil3";
 import Accueil4 from "./accueil4";
 import Accueil5 from "./accueil5";
+import Footer from "../../components/Footer";
 
 export default function Home() {
     const [language, setLanguage] = useState("FR");
@@ -18,7 +19,7 @@ export default function Home() {
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        console.log("Scroll Y:", scrollPosition);
+        // console.log("Scroll Y:", scrollPosition);
         setScrollY(scrollPosition);
         for (let position in whiteHeaderY) {
             if (whiteHeaderY[position][0] <= scrollPosition && scrollPosition < whiteHeaderY[position][1]) {
@@ -50,6 +51,7 @@ export default function Home() {
                 <Accueil3 language={language}/>
                 <Accueil4 language={language}/>
                 <Accueil5 language={language}/>
+                <Footer language={language}/>
             </Flex>
         </>
     )
