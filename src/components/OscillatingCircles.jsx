@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box } from "@chakra-ui/react";
 
 // Global CSS for animation
@@ -65,6 +65,7 @@ const styles = `
 `;
 
 const OscillatingCircles = ({setTextToShow, id}) => {
+  const [doOscillate, setDoOscillate] = useState(false);
   return (
     <>
       {/* Include CSS animation in the head of the document */}
@@ -83,7 +84,7 @@ const OscillatingCircles = ({setTextToShow, id}) => {
             height="50px"
             borderRadius="50%"
             border="1px solid white"
-            animation="wave0 2s infinite ease-in-out"
+            animation={doOscillate ? "wave0 2s infinite ease-in-out" : null}
             opacity={1}
         />
         <Box
@@ -92,7 +93,7 @@ const OscillatingCircles = ({setTextToShow, id}) => {
             height="50px"
             borderRadius="50%"
             border="5px solid white"
-            animation="wave1 2s infinite ease-in-out"
+            animation={doOscillate ? "wave1 2s infinite ease-in-out" : null}
             opacity={1}
         />
         <Box
@@ -102,7 +103,7 @@ const OscillatingCircles = ({setTextToShow, id}) => {
           height="100px"
           borderRadius="50%"
           border="4px solid white"
-          animation="wave2 2s infinite ease-in-out"
+            animation={doOscillate ? "wave2 2s infinite ease-in-out" : null}
             opacity={0.8}
         />
         <Box
@@ -111,10 +112,16 @@ const OscillatingCircles = ({setTextToShow, id}) => {
           height="150px"
           borderRadius="50%"
           border="3px solid white"
-          animation="wave3 2s infinite ease-in-out"
+            animation={doOscillate ? "wave3 2s infinite ease-in-out" : null}
             opacity={0.6}
-            onMouseEnter={() => setTextToShow(id)}
-            onMouseLeave={() => setTextToShow(0)}
+            onMouseEnter={() => {
+              setTextToShow(id);
+              setDoOscillate(true);
+            }}
+            onMouseLeave={() => {
+              setTextToShow(0)
+              setDoOscillate(false)
+            }}
             zIndex={3}
         />
         <Box
@@ -123,7 +130,7 @@ const OscillatingCircles = ({setTextToShow, id}) => {
           height="225px"
           borderRadius="50%"
           border="2px solid white"
-          animation="wave4 2s infinite ease-in-out"
+            animation={doOscillate ? "wave4 2s infinite ease-in-out" : null}
             opacity={0.4}
         />
         {/* Add more circles if necessary */}
