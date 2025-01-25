@@ -7,6 +7,7 @@ import Accueil1 from "./accueil1";
 import Accueil2 from "./accueil2";
 import Header from "../../components/Header";
 import Accueil3 from "./accueil3";
+import Accueil4 from "./accueil4";
 
 export default function Home() {
     const [language, setLanguage] = useState("FR");
@@ -46,6 +47,7 @@ export default function Home() {
                 <Accueil1 language={language} setLanguage={setLanguage}/>
                 <Accueil2 language={language}/>
                 <Accueil3 language={language}/>
+                <Accueil4 language={language}/>
             </Flex>
         </>
     )
