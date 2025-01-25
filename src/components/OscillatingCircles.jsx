@@ -76,8 +76,6 @@ const OscillatingCircles = ({setTextToShow, id}) => {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        onMouseEnter={() => setTextToShow(id)}
-        onMouseLeave={() => setTextToShow(0)}
       >
         <Box
             position="absolute"
@@ -98,6 +96,7 @@ const OscillatingCircles = ({setTextToShow, id}) => {
             opacity={1}
         />
         <Box
+          className="test"
           position="absolute"
           width="100px"
           height="100px"
@@ -105,6 +104,9 @@ const OscillatingCircles = ({setTextToShow, id}) => {
           border="4px solid white"
           animation="wave2 2s infinite ease-in-out"
             opacity={0.8}
+            onMouseEnter={() => setTextToShow(id)}
+            onMouseLeave={() => setTextToShow(0)}
+            zIndex={3}
         />
         <Box
           position="absolute"
