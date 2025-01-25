@@ -97,7 +97,7 @@ export default function Accueil3 ({ language }) {
                 w="50%"
                 p={20}
                 pt={40}>
-                    <VStack>
+                    <VStack spacing={20}>
                         <HStack
                             spacing={10}
                         >
