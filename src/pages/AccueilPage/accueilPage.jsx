@@ -12,7 +12,7 @@ export default function Home() {
     const [language, setLanguage] = useState("FR");
     const [isWhiteHeader, setIsWhiteHeader] = useState(true)
     const [scrollY, setScrollY] = useState(0);
-    const whiteHeaderY = [[0, window.innerHeight], [window.innerHeight*2-50, window.innerHeight*3-50]]
+    const whiteHeaderY = [[0, window.innerHeight-50], [window.innerHeight*2-50, window.innerHeight*3-50]]
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
