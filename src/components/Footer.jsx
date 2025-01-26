@@ -7,8 +7,8 @@ export default function Footer({ language }) {
         <Flex direction={"column"} align={"center"}>
             <Flex w="full" align={"center"} justify={"space-between"}>
                 <HStack>
-                    <Image src="/Certified_B_Corporation_B_Corp_Logo_2022_White.png" boxSize={28} objectFit='contain'/>
-                    <Image src="/Logo_France_2030_White.png" boxSize={24} objectFit='contain'/>
+                    <Image src="/iXcampusWebsite/Certified_B_Corporation_B_Corp_Logo_2022_White.png" boxSize={28} objectFit='contain'/>
+                    <Image src="/iXcampusWebsite/Logo_France_2030_White.png" boxSize={24} objectFit='contain'/>
                 </HStack>
                 <Text opacity={0.6} fontWeight={"hairline"}>
                     &gt; IXCONNECT

@@ -11,10 +11,10 @@ export default function Accueil2 ({ language }) {
                 : "On our campuses, we transform deeptech innovations into high-impact industrial solutions."}
                 </Text>
                 <HStack align={"center"} spacing={10}>
-                    <Image src='/Certified_B_Corporation_B_Corp_Logo_2022_Grey.png' objectFit='contain' h="200px" w="auto"/>
-                    <Image src='/logo-TI29Grey.png' objectFit='contain' w="300px" h="auto"/>
-                    <Image src='/Logo_France_2030_Grey.png' objectFit='contain' h="150px" w="auto"/>
-                    <Image src='/logo-terre-d-innovation-2.png' objectFit='contain' h="150px" w="auto"/>
+                    <Image src='/iXcampusWebsite/Certified_B_Corporation_B_Corp_Logo_2022_Grey.png' objectFit='contain' h="200px" w="auto"/>
+                    <Image src='/iXcampusWebsite/logo-TI29Grey.png' objectFit='contain' w="300px" h="auto"/>
+                    <Image src='/iXcampusWebsite/Logo_France_2030_Grey.png' objectFit='contain' h="150px" w="auto"/>
+                    <Image src='/iXcampusWebsite/logo-terre-d-innovation-2.png' objectFit='contain' h="150px" w="auto"/>
                 </HStack>
             </VStack>
         </Center>
