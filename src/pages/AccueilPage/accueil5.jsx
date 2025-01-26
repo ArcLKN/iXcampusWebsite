@@ -9,16 +9,16 @@ export default function Accueil5 ({ language }) {
                     <Text fontSize={40} fontWeight={"bold"}>{language === "FR" ? "NOS ACTUALITÉS" : "OUR NEWS"}</Text>
                     <HStack spacing={6} w="full" height={"80vh"} alignItems={"flex-start"} justifyContent={"center"}>
                         <VStack height="100%" spacing={6} direction="column" width={"20%"}>
-                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/public/news1.jpg"} size={1}/>
-                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/public/news2.png"} size={2}/>
+                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/news1.jpg"} size={1}/>
+                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/news2.png"} size={2}/>
                         </VStack>
                         <VStack height="100%" spacing={6} direction="column" width={"20%"}>
-                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/public/news3.png"} size={2}/>
-                            <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/public/news4.png"} size={1}/>
+                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/news3.png"} size={2}/>
+                            <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/news4.png"} size={1}/>
                         </VStack>
                         <VStack height="100%" spacing={6} direction="column" width={"20%"}>
-                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/public/news5.jpg"} size={1}/>
-                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/public/news6.png"} size={2}/>
+                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/news5.jpg"} size={1}/>
+                        <NewsCard language={language} textDict={{"EN": ["Title", "Description"], "FR": ["Titre", "Description"]}} imageSrc={"/news6.png"} size={2}/>
                         </VStack>
 
                     </HStack>

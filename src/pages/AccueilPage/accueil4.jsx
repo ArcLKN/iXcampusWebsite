@@ -3,7 +3,8 @@ import { Box, Text, Center, Flex, VStack, Image, HStack } from "@chakra-ui/react
 
 export default function Accueil4({ language }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const imagesTexts = [
+  const imagesTexts = {
+    "FR" : [
     ["Plateaux techniques partagés", "Ayez accès à des Fablabs, des salles blanches, ainsi que des équipements de tests et mesures."],
     ["Plateaux techniques partagés", "Ayez accès à des Fablabs, des salles blanches, ainsi que des équipements de tests et mesures."],
     ["Plateaux techniques partagés", "Ayez accès à des Fablabs, des salles blanches, ainsi que des équipements de tests et mesures."],
@@ -12,7 +13,18 @@ export default function Accueil4({ language }) {
     ["Plateaux techniques partagés", "Ayez accès à des Fablabs, des salles blanches, ainsi que des équipements de tests et mesures."],
     ["Plateaux techniques partagés", "Ayez accès à des Fablabs, des salles blanches, ainsi que des équipements de tests et mesures."],
     ["Plateaux techniques partagés", "Ayez accès à des Fablabs, des salles blanches, ainsi que des équipements de tests et mesures."],
-  ];
+  ], "EN": [
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+    ["Shared technical platforms", "Access to Fablabs, clean rooms and test and measurement equipment"],
+  ]
+  };
 
   return (
     <Center bg="white" w="100%" h="100vh" m={0} overflow="hidden" py={20}>
@@ -41,9 +53,9 @@ export default function Accueil4({ language }) {
               {hoveredIndex === i && (
                 <Box textAlign="left">
                   <Text fontWeight={"semibold"} fontSize={20}>
-                    {imagesTexts[i][0]}
+                    {imagesTexts[language][i][0]}
                   </Text>
-                  <Text>{imagesTexts[i][1]}</Text>
+                  <Text>{imagesTexts[language][i][1]}</Text>
                 </Box>
               )}
             </Flex>
