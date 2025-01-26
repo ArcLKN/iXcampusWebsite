@@ -5,7 +5,6 @@ export default function Accueil1 ({ language, setLanguage }) {
 
     const handleLanguageChange = (language) => {
         setLanguage(language);
-        // Optional: Add additional logic here, such as updating a context or API call
       };
 
 	return (
@@ -15,14 +14,14 @@ export default function Accueil1 ({ language, setLanguage }) {
                 <Image src='../../../public/iXcampusDecouvrez.jpg' objectFit='contain' h="90%"/>
                 <HStack spacing={4} justify={"right"} h={"5%"}>
                     <Text
-                    color="white"
+                    color={language === "FR" ? "#ab8957" : "white"}
                     onClick={() => handleLanguageChange("FR")}
                     >
                         FR
                     </Text>
                     <Text color="white">/</Text>
                     <Text
-                    color="white"
+                    color={language === "EN" ? "#ab8957" : "white"}
                     onClick={() => handleLanguageChange("EN")}>
                         EN
                     </Text>
