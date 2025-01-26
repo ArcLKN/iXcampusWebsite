@@ -45,7 +45,7 @@ export default function Accueil4({ language }) {
                 width={hoveredIndex === i ? "50%" : "80px"}
                 transition="width 0.1s ease">
               <Image
-                src={`bank${i + 1}.png`} // Fixed path
+                src={`/iXcampusWebsite/bank${i + 1}.png`} // Fixed path
                 alt={`Image ${i + 1}`}
                 height="500px"
                 objectFit="cover"
