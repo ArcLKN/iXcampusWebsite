@@ -42,7 +42,7 @@ export default function Accueil3 ({ language }) {
             position="relative" 
             w="100%" 
             h="100%" 
-            bgImage='/public/Campus.png'
+            bgImage='/iXcampusWebsite/Campus.png'
             bgSize="cover" 
             bgPosition="center"
             >
