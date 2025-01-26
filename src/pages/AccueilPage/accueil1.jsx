@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Center, HStack, Text, Flex, Image } from "@chakra-ui/react";
+import VideoCard from "./Components/VideoCard";
 
 export default function Accueil1 ({ language, setLanguage }) {
 
@@ -8,11 +9,13 @@ export default function Accueil1 ({ language, setLanguage }) {
       };
 
 	return (
-        <Center bg="black" w={"100%"} h={"100vh"} p={20}>
-            <Flex direction="column" w="100%" h="100%" justifyContent={"flex-end"}>
+        <Center bg="black" w={"100%"} h={"100vh"}>
+            <Box w={"100%"} overflow={"hidden"} h={"100%"} position="absolute" top="0">
+                <VideoCard videoSrc="/iXcampusWebsite/ixcampus-on-linkedin-ixcampus-saint-germain-en-laye-nouveau-campus-en-2025.mp4"/>
+            </Box>
+            <Flex zIndex={2} direction="column" w="100%" h="100%" justifyContent={"flex-end"} p={20}>
                 <Box h={"5%"} w="100%"/>
-                <Image src='/iXcampusWebsite/iXcampusDecouvrez.jpg' objectFit='contain' h="90%"/>
-                <HStack spacing={4} justify={"right"} h={"5%"}>
+                <HStack spacing={4} justify={"right"} h={"5%"} mt={6}>
                     <Text
                     _hover={{
                         color: "#ab8957",  // Change the text color on hover
