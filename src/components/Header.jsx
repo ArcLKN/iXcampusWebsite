@@ -17,7 +17,7 @@ export default function Header({ language, isWhiteHeader }) {
           right={20}
           color={isWhiteHeader ? "white" : "black"}
         >
-          {language === "FR" ? "Accès résidents" : "Residents access"}
+          {language === "FR" ? "> Accès résidents" : "> Residents access"}
         </Text>
       </Flex>
     </Center>
