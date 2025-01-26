@@ -10,7 +10,8 @@ export default function Accueil1 ({ language, setLanguage }) {
 
 	return (
         <Center bg="black" w={"100%"} h={"100vh"}>
-            <Box w={"100%"} overflow={"hidden"} h={"100%"} position="absolute" top="0">
+            <Box w={"100%"} overflow={"hidden"} h={"100%"} position="absolute" top="0" 
+        pointerEvents="none">
                 <VideoCard videoSrc="/iXcampusWebsite/ixcampus-on-linkedin-ixcampus-saint-germain-en-laye-nouveau-campus-en-2025.mp4"/>
             </Box>
             <Flex zIndex={2} direction="column" w="100%" h="100%" justifyContent={"flex-end"} p={20}>
